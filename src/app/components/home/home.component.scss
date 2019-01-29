@@ -1,0 +1,57 @@
+
+@media only screen and (max-width: 1123px){
+    .from_header {
+       top: 6rem;
+      }
+}
+@media only screen and (max-width: 640px){
+    .from_header {
+       top: 8rem;
+      }
+}
+.example-card {
+    max-width: 400px;
+  }
+  
+  .example-header-image {
+    // background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+
+  :host ::ng-deep .mat-card {
+    background-color: lightblue !important;
+    padding-bottom: 16px !important;
+  }
+
+  .button-container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    opacity: 1;
+    display: block;
+    // width: 100%;
+    // height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .button-container:hover .image {
+    opacity: 0.3;
+  }
+  
+  .button-container:hover .middle {
+    opacity: 1;
+  }
