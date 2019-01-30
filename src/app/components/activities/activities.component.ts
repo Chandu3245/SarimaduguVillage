@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-activities',
@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ActivitiesComponent implements OnInit {
 
+  events: string[] = [];
+  opened: boolean;
   constructor() { }
 
   ngOnInit() {

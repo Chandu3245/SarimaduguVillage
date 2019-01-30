@@ -22,3 +22,14 @@ body{
     position: relative;
     top: 3rem;
 }
+
+@media only screen and (max-width: 1123px){
+    .from_header {
+       top: 6rem;
+      }
+}
+@media only screen and (max-width: 640px){
+    .from_header {
+       top: 8rem;
+      }
+}

@@ -9,12 +9,12 @@ import { AboutComponent } from './components/about/about.component';
 import { NotificationsComponent } from './components/notifications/notifications.component';
 import { MiscellaneousComponent } from './components/miscellaneous/miscellaneous.component';
 import { PhotosComponent } from './components/photos/photos.component';
-import { FestivalsComponent } from './components/festivals/festivals.component';
-import { OthersComponent } from './components/others/others.component';
+import { ActivitiesModule } from './components/activities/activities.module';
 
 const appRoutes: Routes = [
     { path: 'home', component: HomeComponent },
-    { path: 'activities', component: ActivitiesComponent},
+    // { path: 'activities', loadChildren: './components/activities/activities.module#ActivitiesModule'},
+    { path: 'activities', loadChildren:() => ActivitiesModule},
     { path: 'syfoundation', component: SarimaduguYouthComponent},
     { path: 'politics', component: PoliticsComponent},
     { path: 'contact-us', component: ContactUsComponent},
@@ -22,8 +22,6 @@ const appRoutes: Routes = [
     { path: 'misce', component: MiscellaneousComponent},
     { path: 'notification', component: NotificationsComponent},
     { path: 'photos', component: PhotosComponent},
-    { path: 'festivals', component: FestivalsComponent},
-    { path: 'others', component: OthersComponent},
     { path: '',
       redirectTo: '/home',
       pathMatch: 'full'
