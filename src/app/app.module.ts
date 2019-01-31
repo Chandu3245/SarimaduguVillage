@@ -40,7 +40,7 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     SlideshowModule,
     ActivitiesModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
